@@ -1,0 +1,48 @@
+{
+  "$type": "com.atproto.lexicon.schema",
+  "lexicon": 1,
+  "id": "cx.vmx.matadisco",
+  "defs": {
+    "main": {
+      "type": "record",
+      "description": "A Matadisco record",
+      "key": "tid",
+      "record": {
+        "type": "object",
+        "required": [
+          "metadata",
+          "created"
+        ],
+        "properties": {
+          "metadata": {
+            "type": "string",
+            "format": "uri",
+            "description": "A URI containing metadata"
+          },
+          "preview": {
+            "type": "object",
+            "required": [
+              "url",
+              "mimeType"
+            ],
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "mimeType": {
+                "type": "string"
+              }
+            },
+            "description": "Preview of the data"
+          },
+          "created": {
+            "type": "string",
+            "format": "datetime",
+            "description": "The time the metadata record was created"
+          }
+        }
+      }
+    }
+  }
+}
