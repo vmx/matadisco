@@ -3,7 +3,7 @@ Matadisco
 
 Matadisco makes datasets more discoverable. It uses [ATProto] for publishing records that point to the metadata.
 
-For more details about the background and the ideas behind the project refer to the announcement blog post of the [IPFS Foundation] as well as a more technical one at [@vmx' blog].
+For more details about the background and the ideas behind the project refer to the [announcement blog post of the IPFS Foundation] as well as a [more technical one at @vmx' blog].
 
 This is the central entry point for the Matadisco project. It's the place to discuss ideas and issues.
 
@@ -58,8 +58,8 @@ Metadisco records can be used to build your own portals or workflows.
 
 
 [ATProto]: https://atproto.com/
-[IPFS Foundation]: TODO
-[@vmx' blog]: TODO
+[announcement blog post of the IPFS Foundation]: TODO
+[more technical one at @vmx' blog]: TODO
 [Lexicon Schema]: https://atproto.com/specs/lexicon
 [MLF]: https://mlf.lol/
 [cx.vmx.matadisco.json]: cx.vmx.matadisco.json
