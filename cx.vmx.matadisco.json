@@ -10,10 +10,15 @@
       "record": {
         "type": "object",
         "required": [
-          "metadata",
-          "created"
+          "created",
+          "metadata"
         ],
         "properties": {
+          "created": {
+            "type": "string",
+            "format": "datetime",
+            "description": "The time the metadata record was created"
+          },
           "metadata": {
             "type": "string",
             "format": "uri",
@@ -22,24 +27,20 @@
           "preview": {
             "type": "object",
             "required": [
-              "url",
               "mimeType"
             ],
             "properties": {
+              "mimeType": {
+                "type": "string",
+                "description": "The media type the preview has"
+              },
               "url": {
                 "type": "string",
-                "format": "uri"
-              },
-              "mimeType": {
-                "type": "string"
+                "format": "uri",
+                "description": "The URL to the preview"
               }
             },
             "description": "Preview of the data"
-          },
-          "created": {
-            "type": "string",
-            "format": "datetime",
-            "description": "The time the metadata record was created"
           }
         }
       }

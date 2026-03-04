@@ -1,12 +1,14 @@
 /// A Matadisco record
 record matadisco {
+    /// The time the metadata record was created
+    created!: Datetime,
     /// A URI containing metadata
     metadata!: Uri,
     /// Preview of the data
     preview: {
-        url!: Uri,
+        /// The media type the preview has
         mimeType!: string,
+        /// The URL to the preview
+        url: Uri,
     },
-    /// The time the metadata record was created
-    created!: Datetime,
 }

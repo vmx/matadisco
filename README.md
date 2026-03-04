@@ -16,14 +16,16 @@ The central piece of Matadisco is the [Lexicon schema]. To make it easier to rea
 ```mlf
 /// A Matadisco record
 record matadisco {
-    /// A URI containing metadata
-    metadata!: Uri,
     /// The time the metadata record was created
     created!: Datetime,
+    /// A URI containing metadata
+    metadata!: Uri,
     /// Preview of the data
     preview: {
-        url!: Uri,
+        /// The media type the preview has
         mimeType!: string,
+        /// The URL to the preview
+        url: Uri,
     },
 }
 ```
